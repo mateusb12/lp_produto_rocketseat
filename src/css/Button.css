@@ -1,12 +1,16 @@
 .button {
-    padding: 8px 16px;
+    padding: 0.75rem 1.5rem;
     border-radius: 4px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     outline: none;
-    font-weight: bold;
-    color: var(--text-color-primary); /* Using the global variable */
+    background-color: transparent;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
 }
 
 .primary.default {
