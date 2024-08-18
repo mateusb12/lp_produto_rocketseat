@@ -1,0 +1,58 @@
+.background {
+    height: 100vh; /* Full height */
+    background: radial-gradient(circle at top, #333 0%, #000 70%); /* Dark gradient */
+    position: relative; /* Allows us to position elements inside absolutely */
+    overflow: hidden; /* Ensures no overflow from positioned elements */
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    width: 5000px; /* Width of the ellipse */
+    height: 5000px; /* Height of the ellipse */
+    top: 561px; /* Y position */
+    left: -1860px; /* X position */
+    background-color: var(--surface-color); /* Transparent fill */
+    /*border: 1px solid red; !* Red border *!*/
+    border-radius: 50%; /* Creates the ellipse shape */
+    opacity: 1; /* No transparency */
+    z-index: 3;
+}
+
+.backline {
+    position: absolute;
+    width: 998.88px; /* Width of the backline */
+    height: 998.88px; /* Height of the backline */
+    top: -558px; /* Y position */
+    left: 0; /* X position */
+    border: 1px solid lime; /* Light border for backline */
+    border-radius: 50%; /* Makes it an arc */
+    opacity: 1; /* No transparency */
+    transform: rotate(0deg); /* Adjust rotation if needed */
+}
+
+.backline-1 {
+    position: absolute;
+    width: 1000px; /* Width from your Figma design */
+    height: 1000px; /* Height from your Figma design */
+    top: 565px; /* Y position from Figma */
+    left: 0; /* X position from Figma */
+    border-radius: 50%; /* Makes it a perfect circle */
+    border: 1px solid var(--brand-color-primary); /* Transparent border to allow gradient */
+    background-color: var(--brand-color-primary);
+    /*background: radial-gradient(circle at bottom, rgba(255, 140, 0, 0.8) 0%, rgba(255, 69, 0, 0.6) 50%, rgba(0, 0, 0, 0) 100%);*/
+    filter: blur(240px); /* Adds a slight blur for smoothness */
+}
+
+.backline-2 {
+    position: absolute;
+    width: 1000px; /* Example larger width */
+    height: 1000px; /* Example larger height */
+    top: 572px; /* Adjust Y position */
+    left: 440px; /* Adjust X position */
+    border-radius: 50%; /* Perfect circle */
+    border: 1px solid var(--brand-color-secondary); /* Transparent border to allow gradient */
+    background-color: var(--brand-color-secondary);
+    /*background: radial-gradient(circle at bottom, rgba(255, 140, 0, 0.8) 0%, rgba(255, 69, 0, 0.6) 50%, rgba(0, 0, 0, 0) 100%);*/
+    filter: blur(240px); /* Adds a slight blur for smoothness */
+}
