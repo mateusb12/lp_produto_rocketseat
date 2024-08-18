@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap');
+
+/*CSS Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  /* Produto */
+  --brand-gradient-color: #FC4A1A;
+  --brand-color-primary: #F7B733;
+  --brand-color-secondary: #FC4A1A;
+
+  --brand-gradient-start: #FC4A1A;
+  --brand-gradient-end: #F7B733;
+
+  --sunshine-gradient: -webkit-linear-gradient(var(--brand-gradient-start), var(--brand-gradient-end));
+
+  /* Base */
+  --background-color: #09090B;
+  --surface-color: #18181B;
+  --stroke-color: #27272A;
+  --text-color-secondary: #A1A1AA;
+  --text-color-primary: #F4F4F5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Desktop Styles */
+h1 {
+  font-size: 64px;
+  line-height: 120%;
+  font-weight: 800; /* ExtraBold */
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 800; /* ExtraBold */
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 800; /* ExtraBold */
+}
+
+span {
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 500; /* Medium */
+}
+
+p {
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 400; /* Regular */
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 800; /* ExtraBold */
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  h2 {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 800; /* ExtraBold */
   }
-  to {
-    transform: rotate(360deg);
+
+  h3 {
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 800; /* ExtraBold */
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 500; /* Medium */
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 400; /* Regular */
   }
 }
