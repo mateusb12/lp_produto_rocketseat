@@ -1,22 +1,22 @@
 :root {
-    /* Define pixel values as variables */
+    /* Define viewport width (vw) values as variables */
     --background-height: 100vh;
-    --ellipse-width: 5000px;
-    --ellipse-height: 5000px;
-    --ellipse-top: 561px;
-    --ellipse-left: -1860px;
-    --backline-width: 1000px;
-    --backline-height: 1000px;
-    --backline-top: -558px;
-    --backline-left: 0;
-    --yellow-halo-width: 1000px;
-    --yellow-halo-height: 1000px;
-    --yellow-halo-top: 565px;
-    --yellow-halo-left: 0;
-    --red-halo-width: 1000px;
-    --red-halo-height: 1000px;
-    --red-halo-top: 572px;
-    --red-halo-left: 440px;
+    --ellipse-width: 309.03vw;
+    --ellipse-height: 309.03vw;
+    --ellipse-top: 34.70vw;
+    --ellipse-left: -115.00vw;
+    --backline-width: 61.91vw;
+    --backline-height: 61.91vw;
+    --backline-top: -34.52vw;
+    --backline-left: 0vw;
+    --yellow-halo-width: 61.91vw;
+    --yellow-halo-height: 61.91vw;
+    --yellow-halo-top: 34.94vw;
+    --yellow-halo-left: 0vw;
+    --red-halo-width: 61.91vw;
+    --red-halo-height: 61.91vw;
+    --red-halo-top: 35.37vw;
+    --red-halo-left: 27.21vw;
 }
 
 .background {
