@@ -1,10 +1,10 @@
-import '../css/UpperBanner.css';
-import Button from "./Button";
+import './HeroSection.css';
+import Button from "../Button";
 import React from "react";
-import Background from "./Background";
-import soundWave from '../assets/music_rythm.svg';
+import Background from "../Background";
+import soundWave from '../../assets/music_rythm.svg';
 
-const UpperBanner = () => {
+const HeroSection = () => {
     return (
         <div className="main-frame">
             <Background />
@@ -23,4 +23,4 @@ const UpperBanner = () => {
     );
 };
 
-export default UpperBanner;
+export default HeroSection;

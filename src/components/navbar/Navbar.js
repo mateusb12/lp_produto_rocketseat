@@ -1,6 +1,6 @@
 import React from 'react';
-import '../css/Navbar.css';
-import Button from "./Button"; // Assuming the CSS is saved in Navbar.css
+import './Navbar.css';
+import Button from "../Button"; // Assuming the CSS is saved in Navbar.css
 
 const Navbar = () => {
     return (

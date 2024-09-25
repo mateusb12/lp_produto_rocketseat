@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Button from "./components/Button";
-import Navbar from "./components/Navbar";
-import UpperBanner from "./components/UpperBanner";
+import Navbar from "./components/navbar/Navbar";
+import HeroSection from "./components/heroSection/HeroSection";
 import Background from "./components/Background";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
                     <Route path="/primary" element={<Button label="Primary Button" type="primary" />} />
                     <Route path="/secondary" element={<Button label="Secondary Button" type="secondary" />} />
                     <Route path="/navbar" element={<Navbar />} />
-                    <Route path="/upperbanner" element={<UpperBanner />} />
+                    <Route path="/upperbanner" element={<HeroSection />} />
                     <Route path="/background" element={<Background />} />
                 </Routes>
             </div>
@@ -23,7 +23,12 @@ function App() {
 }
 
 function Home() {
-    return <h1>Welcome to the Home Page</h1>;
+    return (
+        <>
+            <Navbar />
+            <HeroSection />
+            <Background />
+        </>)
 }
 
 export default App;
