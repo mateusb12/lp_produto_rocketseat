@@ -6,11 +6,17 @@
     height: 100%;
     z-index: 1; /* Background is behind everything else */
     /*border: 1px solid red;*/
+
+    /*@media (max-width: 768px) {*/
+    /*    background-color: black;*/
+    /*    top: 50%;*/
+    /*}*/
 }
 
 .hero-section {
     text-align: center;
     border: 5px solid blue;
+    background-color: black;
 }
 
 .download-button {
@@ -35,6 +41,10 @@
     justify-content: center;
     gap: 1.5rem;
     /*border: 2px solid #00f3e9;*/
+
+    @media (max-width: 768px) {
+        top: 50%;
+    }
 }
 
 .upper-container {

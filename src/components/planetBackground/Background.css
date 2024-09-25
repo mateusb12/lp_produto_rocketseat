@@ -21,9 +21,13 @@
 
 .background {
     height: var(--background-height);
-    background: radial-gradient(circle at top, #333 0%, #000 70%);
+    background: radial-gradient(circle at top, #121111 0%, #000 70%);
     position: relative;
     overflow: hidden;
+
+    @media (max-width: 768px) {
+        top: 50%;
+    }
 }
 
 .background::before {
