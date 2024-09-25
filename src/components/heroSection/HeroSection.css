@@ -8,9 +8,9 @@
     /*border: 1px solid red;*/
 }
 
-.main-frame {
+.hero-section {
     text-align: center;
-    /*border: 10px solid blue;*/
+    border: 5px solid blue;
 }
 
 .download-button {
@@ -20,8 +20,10 @@
 }
 
 .full-container {
+    border: 1px solid red;
+    /*background-color: black;*/
     position: absolute; /* Now positioned absolutely within main-banner */
-    top: 10%; /* Adjust based on your design needs */
+    top: 27%; /* Adjust based on your design needs */
     left: 50%; /* Centers the container horizontally */
     transform: translateX(-50%); /* Precise centering horizontally */
     width: 80%; /* Adjust width as necessary */

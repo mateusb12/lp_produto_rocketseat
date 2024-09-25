@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Button from "./components/Button";
 import Navbar from "./components/navbar/Navbar";
 import HeroSection from "./components/heroSection/HeroSection";
-import Background from "./components/Background";
+import Background from "./components/planetBackground/Background";
 
 function App() {
     return (
@@ -14,7 +14,7 @@ function App() {
                     <Route path="/primary" element={<Button label="Primary Button" type="primary" />} />
                     <Route path="/secondary" element={<Button label="Secondary Button" type="secondary" />} />
                     <Route path="/navbar" element={<Navbar />} />
-                    <Route path="/upperbanner" element={<HeroSection />} />
+                    <Route path="/herosection" element={<HeroSection />} />
                     <Route path="/background" element={<Background />} />
                 </Routes>
             </div>
@@ -27,7 +27,7 @@ function Home() {
         <>
             <Navbar />
             <HeroSection />
-            <Background />
+            {/*<Background />*/}
         </>)
 }
 

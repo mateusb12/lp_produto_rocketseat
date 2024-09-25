@@ -1,12 +1,12 @@
 import './HeroSection.css';
 import Button from "../Button";
 import React from "react";
-import Background from "../Background";
+import Background from "../planetBackground/Background";
 import soundWave from '../../assets/music_rythm.svg';
 
 const HeroSection = () => {
     return (
-        <div className="main-frame">
+        <div className="hero-section">
             <Background />
             <div className="full-container">
                 <div className="upper-container">
